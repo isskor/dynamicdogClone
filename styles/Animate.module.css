@@ -1,0 +1,22 @@
+.animation_block {
+  overflow: hidden;
+}
+
+.t_down {
+  transform: translate3d(0px, 200px, 0px);
+  opacity: 0;
+}
+
+.slideUp {
+  animation: slideUp 0.7s ease-out forwards;
+  opacity: 1;
+}
+
+@keyframes slideUp {
+  /* from {
+    transform: translate3d(0px, 200px, 0px);
+  } */
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}

@@ -1,0 +1,240 @@
+.careers {
+  margin-top: 86px;
+}
+
+.background {
+  background: url('https://dynamicdog.se/wp-content/uploads/2017/01/ddteam.png');
+  height: 825px;
+  background-position: center center;
+  background-size: cover;
+}
+
+.text_block {
+  padding: 70px 50px;
+  min-height: 240px;
+  background: #333;
+}
+
+.text_block h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  /* margin-bottom: 1.5rem; */
+}
+
+.text_block h2 {
+  font-size: 16px;
+  padding: 1.5rem 0;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+.text_block p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.green {
+  background: #1fc36f;
+  color: #fff;
+}
+
+.positions h3 {
+  padding: 50px 0 20px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+/* CARDS */
+.position_card {
+  display: flex;
+  padding: 30px 0;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.position_card:hover {
+  background: #efefef;
+}
+
+.position_card h2 {
+  font-size: 21px;
+}
+
+.position_card span {
+  font-size: 14px;
+}
+
+.toggle {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  /* transform: rotate(45deg); */
+  user-select: none;
+  transition: all 0.5s ease;
+  margin-left: auto;
+}
+
+.toggle_open {
+  /* transition: all 0.25s ease; */
+  transform: rotate(-45deg);
+}
+
+.toggle::before {
+  content: '';
+  grid-area: 1/1/1/1;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #333;
+  display: block;
+  top: calc(50% + 5px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* position: absolute; */
+}
+.toggle::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #000;
+  display: block;
+  top: calc(50% + 5px);
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.card_open {
+  /* transition: all 0.5s ease-in-out; */
+}
+
+.position_card_desc {
+  padding: 0 20px;
+  transition: all 0.5s ease-in-out;
+
+  max-height: 0;
+  overflow: hidden;
+}
+
+.position_card_desc_open {
+  padding: 30px 20px 70px;
+  transition: all 0.5s ease;
+  animation: slideDown 0.25s ease-in-out;
+  max-height: 100%;
+  /* display: block; */
+}
+
+.position_card_desc h5 {
+  font-size: 16px;
+  line-height: 2rem;
+}
+
+.position_card_desc p {
+  line-height: 1.4rem;
+}
+
+.position_card_desc ul {
+  padding: 10px 20px;
+}
+
+@keyframes slideDown {
+  from {
+    height: 0;
+  }
+  to {
+    height: auto;
+    /* display: block; */
+  }
+}
+
+@media (min-width: 360px) {
+  .text_block {
+    padding: 60px 40px;
+  }
+
+  .text_block h3 {
+    font-size: 14px;
+    line-height: 1.5rem;
+  }
+
+  .text_block p {
+    line-height: 1.75rem;
+    font-size: 18px;
+  }
+
+  .text_block h2 {
+    font-size: 21px;
+    line-height: 2rem;
+  }
+
+  .text_block blockquote {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 480px) {
+  .background {
+    height: 315px;
+  }
+
+  .text_block {
+    padding: 70px 100px;
+  }
+
+  .text_block p {
+    line-height: 1.75rem;
+    font-size: 18px;
+  }
+
+  .text_block h3 {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+  }
+  .text_block h2 {
+    font-size: 30px;
+    line-height: 2.5rem;
+  }
+  .positions {
+    padding: 0 60px;
+  }
+
+  .position_card {
+    padding: 30px 0px;
+  }
+
+  .position_card_desc_open {
+    background: #efefef;
+  }
+  .card_open {
+    background: #efefef;
+  }
+}
+
+@media (min-width: 992px) {
+  .whatWeDo {
+    margin-top: 86px;
+  }
+
+  .background {
+    margin-top: 50px;
+    height: auto;
+  }
+
+  .col_img {
+    height: 100%;
+  }
+
+  .text_block blockquote {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .positions h3 {
+    padding: 50px 20px 20px;
+  }
+
+  .position_card {
+    padding: 30px 20px;
+  }
+}

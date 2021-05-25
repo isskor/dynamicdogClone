@@ -1,0 +1,82 @@
+.overlay {
+  position: fixed;
+  background: white;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  animation: fadeOut 2s ease forwards;
+  animation-delay: 1s;
+}
+
+.dog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dog img {
+  max-width: 150px;
+}
+.dd {
+  animation: jump 2s ease infinite;
+  animation-fill-mode: both;
+}
+
+.shadow {
+  margin-left: 20px;
+  margin-top: -20px;
+  animation: expand 2s ease infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes jump {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-150px);
+  }
+  60% {
+    transform: translateY(-75px);
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes expand {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.2);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+  }
+}

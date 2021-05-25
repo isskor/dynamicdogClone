@@ -1,0 +1,174 @@
+.background {
+  background-image: url('https://dynamicdog.se/wp-content/uploads/2015/12/photo-1421986527537-888d998adb74.jpeg');
+  height: 825px;
+  background-position: center center;
+  background-size: cover;
+  margin-top: 70px;
+}
+
+.text_block {
+  padding: 70px 50px;
+  color: #333;
+}
+
+.text_block h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  /* margin-bottom: 1.5rem; */
+}
+
+.text_block h2 {
+  font-size: 16px;
+  padding: 1.5rem 0;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+.text_block p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.black {
+  background: #000;
+  color: #fff;
+}
+
+.green {
+  background: #1fc36f;
+  color: #fff;
+}
+
+.title_icon {
+  display: flex;
+  align-items: center;
+}
+.title_icon img {
+  width: 30px;
+  height: 100%;
+  margin-right: 15px;
+}
+
+.gray {
+  background: #e0e0e0;
+}
+
+.quote {
+  text-align: center;
+}
+
+.quote blockquote {
+  font-size: 26px;
+  font-family: 'Newsreader', serif;
+  font-weight: 400;
+  /* line-height: 54px; */
+}
+
+.col_img {
+  width: 100%;
+  height: 325px;
+  object-fit: cover;
+}
+
+.img_block {
+  background: #000;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.img_block img {
+  width: 100%;
+  width: 80%;
+  max-width: 400px;
+}
+
+@media (min-width: 360px) {
+  .text_block {
+    padding: 60px 40px;
+  }
+
+  .text_block h3 {
+    font-size: 14px;
+    line-height: 1.5rem;
+  }
+
+  .text_block p {
+    line-height: 1.75rem;
+    font-size: 18px;
+  }
+
+  .text_block h2 {
+    font-size: 21px;
+    line-height: 2rem;
+  }
+  .services p {
+    font-size: 16px;
+  }
+  .text_block blockquote {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 480px) {
+  .background {
+    height: 315px;
+  }
+
+  .text_block {
+    padding: 70px 100px;
+  }
+
+  .text_block p {
+    line-height: 1.75rem;
+    font-size: 18px;
+  }
+
+  .text_block h3 {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+  }
+  .text_block h2 {
+    font-size: 30px;
+    line-height: 2.5rem;
+  }
+  .text_block blockquote {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 992px) {
+  .whatWeDo {
+    margin-top: 86px;
+  }
+
+  .background {
+    margin-top: 50px;
+    height: auto;
+  }
+
+  .col_img {
+    height: 100%;
+  }
+
+  .text_block blockquote {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .img_block {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    /* height: 100%; */
+  }
+}
+
+@media (min-width: 1600px) {
+  .col_img {
+    height: 100%;
+    max-height: 450px;
+  }
+}

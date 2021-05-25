@@ -1,0 +1,154 @@
+.background {
+  background-image: url('https://dynamicdog.se/wp-content/uploads/2016/10/contact2_mobile.jpg');
+
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+}
+
+.address_block {
+  background: #000;
+  color: #fff;
+  padding: 70px 30px 20px;
+}
+
+.address {
+  padding-bottom: 50px;
+}
+
+.address h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  line-height: 1.5rem;
+}
+.address p {
+  font-size: 21px;
+}
+
+.contact_block {
+  background: #fff;
+}
+
+.text_block {
+  background: #fff;
+  padding: 50px 30px;
+}
+
+.text_block h2 {
+  font-size: 24px;
+  font-weight: 200;
+  margin: 1rem 0;
+  padding: 0;
+  line-height: 3rem;
+}
+
+.text_block p {
+  padding: 1rem 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+.contact_persons {
+  background: #e0e0e0;
+  padding: 50px 30px;
+}
+
+.contact_persons h4 {
+  font-weight: 200;
+  margin: 2rem 0 1.5rem;
+  font-size: 21px;
+}
+
+.contact_persons p {
+  margin: 0.5rem 0;
+  font-size: 14px;
+}
+
+.contact_persons span {
+  font-weight: bold;
+  display: block;
+  /* font-size: 14px; */
+}
+
+.persons_left {
+  margin-bottom: 1.5rem;
+}
+
+.persons_right a {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 360px) {
+  .address_block {
+    padding: 60px 60px 30px;
+  }
+  .text_block {
+    padding: 60px 40px;
+  }
+
+  .text_block h3 {
+    font-size: 14px;
+    line-height: 1.5rem;
+  }
+
+  .text_block h2 {
+    font-size: 30px;
+  }
+
+  .text_block p {
+    line-height: 1.75rem;
+    font-size: 21px;
+  }
+
+  .contact_persons p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 480px) {
+  .text_block {
+    padding: 60px;
+  }
+
+  .contact_persons {
+    padding: 50px 60px 70px;
+  }
+}
+
+@media (min-width: 640px) {
+  .background {
+    margin-bottom: -65px;
+  }
+}
+
+@media (min-width: 768px) {
+  .background {
+    margin-bottom: -50%;
+  }
+}
+@media (min-width: 992px) {
+  .background {
+    margin-bottom: -65px;
+    position: relative;
+    z-index: -1;
+  }
+  .addresses_block {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    max-width: 900px;
+  }
+
+  .contact_persons {
+    padding-left: 90px;
+  }
+}
+@media (min-width: 1200px) {
+  .text_block,
+  .contact_persons {
+    padding: 110px;
+  }
+}

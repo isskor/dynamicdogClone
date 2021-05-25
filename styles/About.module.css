@@ -1,0 +1,211 @@
+.background {
+  background-image: url('http://dynamicdog.se/wp-content/uploads/2016/05/about2.jpg');
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+}
+
+.text_block {
+  padding: 50px 30px;
+  background: #fff;
+}
+
+.text_block h2 {
+  font-size: 24px;
+  font-weight: 200;
+  margin: 1rem 0;
+  padding: 0;
+  line-height: 3rem;
+}
+
+.text_block p {
+  padding: 1rem 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+.funFacts {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('https://dynamicdog.se/wp-content/themes/dynamicdog/img/temp/lp.jpg');
+  height: 580px;
+  background-size: 100% 580px;
+  background-repeat: no-repeat;
+}
+
+.funFacts ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.funFacts li {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.funFacts span {
+  font-size: 60px;
+  font-family: 'Newsreader', serif;
+  font-weight: 100;
+  display: block;
+  /* width: 200px; */
+  /* text-align: center; */
+}
+
+.gray {
+  background: #e0e0e0;
+}
+
+.quote {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.quote blockquote {
+  font-size: 26px;
+  font-family: 'Newsreader', serif;
+  font-weight: 400;
+  /* line-height: 54px; */
+}
+
+.quote span::before {
+  content: '';
+  width: 14px;
+  display: inline-block;
+  border-top: 0.5px solid black;
+  margin-bottom: 4px;
+  margin-right: 8px;
+}
+.quote span {
+  font-size: 14px;
+}
+
+.awards {
+  text-align: center;
+}
+.text_block .awards p {
+  margin: 0 auto;
+  width: 20ch;
+  font-size: 16px;
+}
+
+.gallery img {
+  width: 100%;
+}
+
+.brands span {
+  color: #fff;
+  background: #d91978;
+}
+
+@media (min-width: 360px) {
+  .text_block {
+    padding: 60px 40px;
+  }
+
+  .text_block h3 {
+    font-size: 14px;
+    line-height: 1.5rem;
+  }
+
+  .text_block p {
+    line-height: 1.75rem;
+    font-size: 21px;
+  }
+
+  .text_block h2 {
+    font-size: 30px;
+  }
+
+  .quote blockquote {
+    font-size: 30px;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 480px) {
+  .text_block {
+    padding: 60px;
+  }
+
+  .funFacts {
+    height: 310px;
+    background-size: 100% 310px;
+  }
+  .funFacts ul {
+    flex-direction: row;
+  }
+  .funFacts li {
+    font-size: 14px;
+  }
+  .funFacts span {
+    font-size: 55px;
+  }
+
+  .quote blockquote {
+    font-size: 35px;
+  }
+  .quote p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 600px) {
+  .background {
+    /* background-image: url('https://dynamicdog.se/wp-content/uploads/2016/10/digital7.3.jpg'); */
+  }
+}
+@media (min-width: 640px) {
+  .background {
+    margin-bottom: -65px;
+  }
+  .funFacts li {
+    font-size: 14px;
+  }
+  .funFacts span {
+    font-size: 65px;
+  }
+}
+
+@media (min-width: 768px) {
+  .background {
+    margin-bottom: -50%;
+  }
+}
+@media (min-width: 992px) {
+  .background {
+    margin-bottom: -65px;
+    position: relative;
+    z-index: -1;
+  }
+  .whatWeDo {
+    /* margin-top: 160px; */
+    position: absolute;
+    bottom: 0;
+    /* margin-bottom: -60px; */
+    z-index: 2;
+  }
+
+  .img_block {
+    padding: 50px;
+    height: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .text_block {
+    padding: 110px;
+  }
+  .whatWeDo {
+    padding-right: 110px;
+    max-width: 900px;
+  }
+}
